@@ -1,0 +1,32 @@
+"""
+Starts journal entry with current date.
+"""
+# Imports date from the datetime module
+from datetime import date
+
+# Returns the current local date for journal entry
+today = date.today()
+print("Today date is: ", today)
+
+"""
+Prompts the user for their name and then says hello to begin journal entry.
+"""
+
+def main():
+    question1 = input("What is your name? ")
+    print("Hello " + str(question1) + "!")
+
+    question2 = input("What are 3 things you are grateful for? ")
+    print("Wow! You're grateful for a lot of things! ")
+
+    question3 = input("What are some good things that happened today? ")
+    print("You're doing a good job. ")
+
+    question4 = input("What are you thinking of? ")
+    print("That's okay! Release all of those thoughts and clear your mind. ")
+
+    question5 = input("What are you looking forward to tomorrow? ")
+    print("Awesome! See you tomorrow! ")
+
+if __name__ == '__main__':
+    main()
